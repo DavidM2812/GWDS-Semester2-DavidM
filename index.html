@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -14,8 +15,15 @@
   <!--CSS Doesn't work so im putting style elements here.-->
   <style>
       .logo {
-        height: 50px; 
+        height: 150px; 
         width: auto;
+      }
+      .custom-navbar {
+        background-color:#00aeef;
+      }
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link.active {
+        color: #FFC107;
       }
       .navbar-nav .nav-link {
         font-size: 1.1rem;
@@ -25,13 +33,12 @@
         transition: all 0.3s ease;
         position: relative;
       }
-      .navbar-nav .nav-link:hover,
-      .navbar-nav .nav-link.active {
-        color: #33beff;
-      }
       .navbar-nav .nav-link:hover::after,
       .navbar-nav .nav-link.active::after {
         width: 50%;
+      }
+      body {
+    font-family: 'Raleway', sans-serif;
       }
   </style>
 
@@ -39,7 +46,7 @@
 <nav class="navbar navbar-expand-lg custom-navbar">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="assets/images/Logo.png" alt="Logo" class="logo">
+      <img src="assets/images/logotype.png" alt="Logo" class="logo">
     </a>
     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -138,3 +145,8 @@
     &copy; 2025 GO! Bike. All rights reserved.
   </div>
 </footer>
+
+<!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
