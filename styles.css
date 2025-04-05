@@ -1,6 +1,0 @@
-/* Optional: to ensure the logo resizes on mobile */
-@media (max-width: 768px) {
-    .position-absolute {
-      max-width: 150px; /* Smaller logo on mobile */
-    }
-  }
